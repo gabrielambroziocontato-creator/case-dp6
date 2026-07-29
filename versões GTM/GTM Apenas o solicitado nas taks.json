@@ -1,11 +1,13 @@
 {
     "exportFormatVersion": 2,
-    "exportTime": "2026-07-29 20:12:05",
+    "exportTime": "2026-07-29 21:42:35",
     "containerVersion": {
-        "path": "accounts/6368685383/containers/259761092/versions/0",
+        "path": "accounts/6368685383/containers/259761092/versions/6",
         "accountId": "6368685383",
         "containerId": "259761092",
-        "containerVersionId": "0",
+        "containerVersionId": "6",
+        "name": "Clean up",
+        "description": "Remove the excess tags letting only the required ones from the task",
         "container": {
             "path": "accounts/6368685383/containers/259761092",
             "accountId": "6368685383",
@@ -672,350 +674,6 @@
                 "consentSettings": {
                     "consentStatus": "NOT_SET"
                 }
-            },
-            {
-                "accountId": "6368685383",
-                "containerId": "259761092",
-                "tagId": "29",
-                "name": "Google Ads | Remarketing | All Pages",
-                "type": "sp",
-                "parameter": [
-                    {
-                        "type": "BOOLEAN",
-                        "key": "enableConversionLinker",
-                        "value": "true"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "enableDynamicRemarketing",
-                        "value": "false"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "conversionId",
-                        "value": "{{CONST | Google Ads Conversion ID}}"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "customParamsFormat",
-                        "value": "NONE"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "rdp",
-                        "value": "false"
-                    }
-                ],
-                "fingerprint": "1785353129115",
-                "firingTriggerId": [
-                    "2147479553"
-                ],
-                "parentFolderId": "35",
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                },
-                "consentSettings": {
-                    "consentStatus": "NOT_SET"
-                }
-            },
-            {
-                "accountId": "6368685383",
-                "containerId": "259761092",
-                "tagId": "30",
-                "name": "Google Ads | Primary Conversion | Form Submit | About | Contact",
-                "type": "awct",
-                "parameter": [
-                    {
-                        "type": "BOOLEAN",
-                        "key": "enableNewCustomerReporting",
-                        "value": "false"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "enableConversionLinker",
-                        "value": "true"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "enableProductReporting",
-                        "value": "false"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "enableShippingData",
-                        "value": "false"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "conversionId",
-                        "value": "{{CONST | Google Ads Conversion ID}}"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "conversionLabel",
-                        "value": "xxxxxxxxxxxx"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "rdp",
-                        "value": "false"
-                    }
-                ],
-                "fingerprint": "1785353129115",
-                "firingTriggerId": [
-                    "17"
-                ],
-                "parentFolderId": "35",
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                },
-                "consentSettings": {
-                    "consentStatus": "NOT_SET"
-                }
-            },
-            {
-                "accountId": "6368685383",
-                "containerId": "259761092",
-                "tagId": "34",
-                "name": "Google Ads | Enhanced Conversion | Form Submit | About | Contact",
-                "type": "awud",
-                "priority": {
-                    "type": "INTEGER",
-                    "value": "99"
-                },
-                "parameter": [
-                    {
-                        "type": "TEMPLATE",
-                        "key": "userDataVariable",
-                        "value": "{{User Data | About | Contact}}"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "enableConversionLinker",
-                        "value": "true"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "conversionId",
-                        "value": "{{CONST | Google Ads Conversion ID}}"
-                    }
-                ],
-                "fingerprint": "1785353129116",
-                "firingTriggerId": [
-                    "17"
-                ],
-                "parentFolderId": "35",
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                },
-                "consentSettings": {
-                    "consentStatus": "NOT_SET"
-                }
-            },
-            {
-                "accountId": "6368685383",
-                "containerId": "259761092",
-                "tagId": "38",
-                "name": "META Ads | Standard | All Pages",
-                "type": "cvt_5RM3Q",
-                "priority": {
-                    "type": "INTEGER",
-                    "value": "100"
-                },
-                "parameter": [
-                    {
-                        "type": "BOOLEAN",
-                        "key": "disablePushState",
-                        "value": "false"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "pixelId",
-                        "value": "{{CONST | META Pixel Code}}"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "standardEventName",
-                        "value": "PageView"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "disableAutoConfig",
-                        "value": "false"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "useGA4Ecommerce",
-                        "value": "false"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "enhancedEcommerce",
-                        "value": "false"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "dpoLDU",
-                        "value": "false"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "eventName",
-                        "value": "standard"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "objectPropertiesFromVariable",
-                        "value": "false"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "consent",
-                        "value": "true"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "advancedMatching",
-                        "value": "false"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "optInMetaCAPI",
-                        "value": "true"
-                    }
-                ],
-                "fingerprint": "1785354441083",
-                "firingTriggerId": [
-                    "2147479553"
-                ],
-                "parentFolderId": "40",
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                },
-                "consentSettings": {
-                    "consentStatus": "NOT_SET"
-                }
-            },
-            {
-                "accountId": "6368685383",
-                "containerId": "259761092",
-                "tagId": "39",
-                "name": "META Ads | Lead | Form Submit | About | Contact",
-                "type": "cvt_5RM3Q",
-                "parameter": [
-                    {
-                        "type": "BOOLEAN",
-                        "key": "disablePushState",
-                        "value": "false"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "standardEventName",
-                        "value": "Lead"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "useGA4Ecommerce",
-                        "value": "false"
-                    },
-                    {
-                        "type": "LIST",
-                        "key": "advancedMatchingList",
-                        "list": [
-                            {
-                                "type": "MAP",
-                                "map": [
-                                    {
-                                        "type": "TEMPLATE",
-                                        "key": "name",
-                                        "value": "em"
-                                    },
-                                    {
-                                        "type": "TEMPLATE",
-                                        "key": "value",
-                                        "value": "{{JS | About | Contact | E-mail Data}}"
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "MAP",
-                                "map": [
-                                    {
-                                        "type": "TEMPLATE",
-                                        "key": "name",
-                                        "value": "ph"
-                                    },
-                                    {
-                                        "type": "TEMPLATE",
-                                        "key": "value",
-                                        "value": "{{JS | About | Contact | Phone Data}}"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "objectPropertiesFromVariable",
-                        "value": "false"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "consent",
-                        "value": "true"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "optInMetaCAPI",
-                        "value": "true"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "pixelId",
-                        "value": "{{CONST | META Pixel Code}}"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "disableAutoConfig",
-                        "value": "false"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "enhancedEcommerce",
-                        "value": "false"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "dpoLDU",
-                        "value": "false"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "eventName",
-                        "value": "standard"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "advancedMatching",
-                        "value": "true"
-                    }
-                ],
-                "fingerprint": "1785354441084",
-                "firingTriggerId": [
-                    "17"
-                ],
-                "parentFolderId": "40",
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                },
-                "consentSettings": {
-                    "consentStatus": "NOT_SET"
-                }
             }
         ],
         "trigger": [
@@ -1128,25 +786,8 @@
                 "accountId": "6368685383",
                 "containerId": "259761092",
                 "triggerId": "17",
-                "name": "Form Submit | About | Contact",
+                "name": "Form Submit",
                 "type": "FORM_SUBMISSION",
-                "filter": [
-                    {
-                        "type": "EQUALS",
-                        "parameter": [
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg0",
-                                "value": "{{Form Classes}}"
-                            },
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg1",
-                                "value": "contato"
-                            }
-                        ]
-                    }
-                ],
                 "waitForTags": {
                     "type": "TEMPLATE"
                 },
@@ -1160,13 +801,13 @@
                 "uniqueTriggerId": {
                     "type": "TEMPLATE"
                 },
-                "fingerprint": "1785350850709"
+                "fingerprint": "1785360874146"
             },
             {
                 "accountId": "6368685383",
                 "containerId": "259761092",
                 "triggerId": "22",
-                "name": "Custom Event | form_start | About | Contact",
+                "name": "Custom Event | form_start",
                 "type": "CUSTOM_EVENT",
                 "customEventFilter": [
                     {
@@ -1185,30 +826,13 @@
                         ]
                     }
                 ],
-                "filter": [
-                    {
-                        "type": "EQUALS",
-                        "parameter": [
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg0",
-                                "value": "{{Form Classes}}"
-                            },
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg1",
-                                "value": "contato"
-                            }
-                        ]
-                    }
-                ],
-                "fingerprint": "1785350872765"
+                "fingerprint": "1785360884413"
             },
             {
                 "accountId": "6368685383",
                 "containerId": "259761092",
                 "triggerId": "25",
-                "name": "Custom Event | view_form_success | About | Contact",
+                "name": "Custom Event | view_form_success",
                 "type": "CUSTOM_EVENT",
                 "customEventFilter": [
                     {
@@ -1227,24 +851,7 @@
                         ]
                     }
                 ],
-                "filter": [
-                    {
-                        "type": "CONTAINS",
-                        "parameter": [
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg0",
-                                "value": "{{Form Classes}}"
-                            },
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg1",
-                                "value": "contato"
-                            }
-                        ]
-                    }
-                ],
-                "fingerprint": "1785350914675"
+                "fingerprint": "1785360903753"
             }
         ],
         "variable": [
@@ -1305,96 +912,6 @@
                 ],
                 "fingerprint": "1785350817090",
                 "formatValue": {}
-            },
-            {
-                "accountId": "6368685383",
-                "containerId": "259761092",
-                "variableId": "27",
-                "name": "CONST | Google Ads Conversion ID",
-                "type": "c",
-                "parameter": [
-                    {
-                        "type": "TEMPLATE",
-                        "key": "value",
-                        "value": "bebam água"
-                    }
-                ],
-                "fingerprint": "1785352272392",
-                "formatValue": {}
-            },
-            {
-                "accountId": "6368685383",
-                "containerId": "259761092",
-                "variableId": "31",
-                "name": "JS | About | Contact | E-mail Data",
-                "type": "jsm",
-                "parameter": [
-                    {
-                        "type": "TEMPLATE",
-                        "key": "javascript",
-                        "value": "function () {\n  var field = document.getElementById('email');\n\n  if (!field) {\n    return undefined;\n  }\n\n  var value = String(field.value || '')\n    .replace(/\\s+/g, ' ')\n    .trim();\n\n  if (!value || value.length > 100) {\n    return undefined;\n  }\n\n  return value;\n}"
-                    }
-                ],
-                "fingerprint": "1785353277082",
-                "formatValue": {}
-            },
-            {
-                "accountId": "6368685383",
-                "containerId": "259761092",
-                "variableId": "32",
-                "name": "JS | About | Contact | Phone Data",
-                "type": "jsm",
-                "parameter": [
-                    {
-                        "type": "TEMPLATE",
-                        "key": "javascript",
-                        "value": "function () {\n  var field = document.getElementById('telefone');\n\n  if (!field) {\n    return undefined;\n  }\n\n  var digits = String(field.value || '').replace(/\\D/g, '');\n\n  if (!digits) {\n    return undefined;\n  }\n\n  // Número brasileiro já contendo o código do país.\n  if (\n    digits.indexOf('55') === 0 &&\n    (digits.length === 12 || digits.length === 13)\n  ) {\n    return '+' + digits;\n  }\n\n  // Número brasileiro com DDD, sem código do país.\n  if (digits.length === 10 || digits.length === 11) {\n    return '+55' + digits;\n  }\n\n  return undefined;\n}"
-                    }
-                ],
-                "fingerprint": "1785354377838",
-                "formatValue": {}
-            },
-            {
-                "accountId": "6368685383",
-                "containerId": "259761092",
-                "variableId": "33",
-                "name": "User Data | About | Contact",
-                "type": "awec",
-                "parameter": [
-                    {
-                        "type": "TEMPLATE",
-                        "key": "mode",
-                        "value": "MANUAL"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "phone_number",
-                        "value": "{{JS | About | Contact | Phone Data}}"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "email",
-                        "value": "{{JS | About | Contact | E-mail Data}}"
-                    }
-                ],
-                "fingerprint": "1785352932439",
-                "formatValue": {}
-            },
-            {
-                "accountId": "6368685383",
-                "containerId": "259761092",
-                "variableId": "37",
-                "name": "CONST | META Pixel Code",
-                "type": "c",
-                "parameter": [
-                    {
-                        "type": "TEMPLATE",
-                        "key": "value",
-                        "value": "qwe1adsda"
-                    }
-                ],
-                "fingerprint": "1785353414038",
-                "formatValue": {}
             }
         ],
         "folder": [
@@ -1404,20 +921,6 @@
                 "folderId": "28",
                 "name": "GA4",
                 "fingerprint": "1785352293785"
-            },
-            {
-                "accountId": "6368685383",
-                "containerId": "259761092",
-                "folderId": "35",
-                "name": "Google Ads",
-                "fingerprint": "1785353127435"
-            },
-            {
-                "accountId": "6368685383",
-                "containerId": "259761092",
-                "folderId": "40",
-                "name": "META Ads",
-                "fingerprint": "1785354438662"
             }
         ],
         "builtInVariable": [
@@ -1506,8 +1009,8 @@
                 "name": "Form Text"
             }
         ],
-        "fingerprint": "1785355924947",
-        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6368685383/containers/259761092/versions/0?apiLink=version",
+        "fingerprint": "1785361329368",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6368685383/containers/259761092/versions/6?apiLink=version",
         "customTemplate": [
             {
                 "accountId": "6368685383",
