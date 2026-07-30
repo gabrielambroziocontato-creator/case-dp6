@@ -1,6 +1,6 @@
 {
     "exportFormatVersion": 2,
-    "exportTime": "2026-07-30 04:08:30",
+    "exportTime": "2026-07-30 04:47:38",
     "containerVersion": {
         "path": "accounts/6368685383/containers/259761092/versions/0",
         "accountId": "6368685383",
@@ -454,7 +454,7 @@
                                     {
                                         "type": "TEMPLATE",
                                         "key": "parameterValue",
-                                        "value": "{{Form Text}}"
+                                        "value": "{{JS | Form | Submit Text}}"
                                     }
                                 ]
                             }
@@ -471,7 +471,7 @@
                         "value": "{{CONST | GA4 Measurement ID}}"
                     }
                 ],
-                "fingerprint": "1785352303686",
+                "fingerprint": "1785386654249",
                 "firingTriggerId": [
                     "17"
                 ],
@@ -1422,6 +1422,22 @@
                 ],
                 "fingerprint": "1785383420997",
                 "formatValue": {}
+            },
+            {
+                "accountId": "6368685383",
+                "containerId": "259761092",
+                "variableId": "45",
+                "name": "JS | Form | Submit Text",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function () {\n  var form = {{Form Element}};\n\n  if (!form) {\n    return '';\n  }\n\n  var selector =\n    'button[type=\"submit\"], button:not([type]), input[type=\"submit\"]';\n\n  var button = document.activeElement;\n\n  if (\n    !button ||\n    !form.contains(button) ||\n    !button.matches(selector)\n  ) {\n    button = form.querySelector(selector);\n  }\n\n  if (!button) {\n    return '';\n  }\n\n  if (button.tagName.toLowerCase() === 'input') {\n    return String(button.value || '').trim();\n  }\n\n  return String(button.textContent || '').trim();\n}"
+                    }
+                ],
+                "fingerprint": "1785386615443",
+                "formatValue": {}
             }
         ],
         "folder": [
@@ -1533,7 +1549,7 @@
                 "name": "Form Text"
             }
         ],
-        "fingerprint": "1785384509826",
+        "fingerprint": "1785386858480",
         "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6368685383/containers/259761092/versions/0?apiLink=version",
         "customTemplate": [
             {

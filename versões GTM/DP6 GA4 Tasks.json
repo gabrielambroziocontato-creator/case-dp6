@@ -1,12 +1,12 @@
 {
     "exportFormatVersion": 2,
-    "exportTime": "2026-07-30 04:18:04",
+    "exportTime": "2026-07-30 04:38:42",
     "containerVersion": {
-        "path": "accounts/6368685383/containers/259761092/versions/11",
+        "path": "accounts/6368685383/containers/259761092/versions/12",
         "accountId": "6368685383",
         "containerId": "259761092",
-        "containerVersionId": "11",
-        "name": "clean up 4",
+        "containerVersionId": "12",
+        "name": "fix form submit text",
         "container": {
             "path": "accounts/6368685383/containers/259761092",
             "accountId": "6368685383",
@@ -417,7 +417,7 @@
                                     {
                                         "type": "TEMPLATE",
                                         "key": "parameterValue",
-                                        "value": "{{Form Text}}"
+                                        "value": "{{JS | Form | Submit Text}}"
                                     }
                                 ]
                             }
@@ -434,7 +434,7 @@
                         "value": "{{CONST | GA4 Measurement ID}}"
                     }
                 ],
-                "fingerprint": "1785352303686",
+                "fingerprint": "1785385913448",
                 "firingTriggerId": [
                     "17"
                 ],
@@ -951,6 +951,22 @@
                 ],
                 "fingerprint": "1785383420997",
                 "formatValue": {}
+            },
+            {
+                "accountId": "6368685383",
+                "containerId": "259761092",
+                "variableId": "44",
+                "name": "JS | Form | Submit Text",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function () {\n  var form = {{Form Element}};\n\n  if (!form) {\n    return '';\n  }\n\n  var selector =\n    'button[type=\"submit\"], button:not([type]), input[type=\"submit\"]';\n\n  var button = document.activeElement;\n\n  if (\n    !button ||\n    !form.contains(button) ||\n    !button.matches(selector)\n  ) {\n    button = form.querySelector(selector);\n  }\n\n  if (!button) {\n    return '';\n  }\n\n  if (button.tagName.toLowerCase() === 'input') {\n    return String(button.value || '').trim();\n  }\n\n  return String(button.textContent || '').trim();\n}"
+                    }
+                ],
+                "fingerprint": "1785385830543",
+                "formatValue": {}
             }
         ],
         "folder": [
@@ -1048,7 +1064,7 @@
                 "name": "Form Text"
             }
         ],
-        "fingerprint": "1785385023488",
-        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6368685383/containers/259761092/versions/11?apiLink=version"
+        "fingerprint": "1785385980760",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6368685383/containers/259761092/versions/12?apiLink=version"
     }
 }
