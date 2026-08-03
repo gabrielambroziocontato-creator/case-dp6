@@ -1,0 +1,160 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2026-08-03 15:20:42",
+    "containerVersion": {
+        "path": "accounts/6368685383/containers/260049985/versions/0",
+        "accountId": "6368685383",
+        "containerId": "260049985",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/6368685383/containers/260049985",
+            "accountId": "6368685383",
+            "containerId": "260049985",
+            "name": "[SS] DP6 Case",
+            "publicId": "GTM-5GWNJ6RM",
+            "usageContext": [
+                "SERVER"
+            ],
+            "fingerprint": "1785685401387",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6368685383/containers/260049985/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": true,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": true
+            },
+            "tagIds": [
+                "GTM-5GWNJ6RM"
+            ],
+            "taggingServerUrls": [
+                "https://ukplxyeq.usu.stape.io"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "6368685383",
+                "containerId": "260049985",
+                "tagId": "5",
+                "name": "Google Tag | GA4 Configuration",
+                "type": "sgtmgaaw",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "redactVisitorIp",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "epToIncludeDropdown",
+                        "value": "all"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "upToIncludeDropdown",
+                        "value": "all"
+                    }
+                ],
+                "fingerprint": "1785701790449",
+                "firingTriggerId": [
+                    "6"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "6368685383",
+                "containerId": "260049985",
+                "triggerId": "6",
+                "name": "Custom Event - All Events",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": ".*"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1785701782848"
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "6368685383",
+                "containerId": "260049985",
+                "type": "EVENT_NAME",
+                "name": "Event Name"
+            }
+        ],
+        "fingerprint": "1785770442959",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6368685383/containers/260049985/versions/0?apiLink=version",
+        "client": [
+            {
+                "accountId": "6368685383",
+                "containerId": "260049985",
+                "clientId": "1",
+                "name": "GA4",
+                "type": "gaaw_client",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "activateDefaultPaths",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieManagement",
+                        "value": "server"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieName",
+                        "value": "FPID"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieDomain",
+                        "value": "auto"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookiePath",
+                        "value": "/"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieMaxAgeInSec",
+                        "value": "63072000"
+                    }
+                ],
+                "fingerprint": "1785644347569"
+            }
+        ]
+    }
+}
